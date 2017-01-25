@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="question.css">
+    <title>旅行に関するアンケート</title>
+</head>
+
+<body>
+    <form action="question_chk.php" method="post">
+        <h1>
+        旅行に関する質問にお答えください。
+       </h1>
+        <div class="yesno">
+            <p>Q.最近旅行に行かれましたか？</p>
+            <input type="radio" name="yesno" id="on" value="1">
+            <label for="on" class="switch-on">はい</label>
+            <input type="radio" name="yesno" id="off" value="0">
+            <label for="off" class="switch-off">いいえ</label>
+        </div>
+        <div class="kymd">
+            <p class="kymd1">Q.いつ旅行に行かれましたか？</p>
+            <input type="text" name="kymd" style="ime-mode:disabled"> (yyyy/m/d)
+        </div>
+        <div class="place">
+            <p>Q.訪れた場所を教えてください！</p>
+            <input type="text" name="place" style="ime-mode:disabled">
+        </div>
+        <div class="problem">
+            <p>Q.旅行で困ったことは何ですか？</p>
+            <input type="radio" name="problem" id="select1" value="1" checked="">
+            <label for="select1">道案内</label>
+            <input type="radio" name="problem" id="select2" value="0" checked="">
+            <label for="select2">wifi環境</label>
+            <input type="radio" name="problem" id="select3" value="0" checked="">
+            <label for="select3">言語</label>
+            <input type="radio" name="problem" id="select4" value="0" checked="">
+            <label for="select4">食事</label>
+            <input type="radio" name="problem" id="select5" value="0" checked="">
+            <label for="select5">その他</label>
+        </div>
+
+        <div class="age">
+            <p>Q.あなたの年齢について教えてください。</p>
+            <select name="age">
+                <option value="選択肢 ">選択肢を選んでください。
+                    <option value=" 10 ">10代
+                        <option value="20 ">20代
+                            <option value="30 ">30代
+                                <option value="40 ">40代
+                                    <option value="50 ">50代
+                                        <option value="60 ">60代以上
+            </select>
+        </div>
+        <div class="job">
+            <p>Q.あなたの職業を教えてください。</p>
+            <select name="job">
+                <option value="選択肢 ">選択肢を選んでください。
+                    <option value="自営業 ">自営業
+                        <option value="会社員 ">会社員
+                            <option value="主婦 ">主婦
+                                <option value="学生 ">学生
+                                    <option value="その他 ">その他
+            </select>
+        </div>
+        <div class="submit">
+            <input type="submit" class="submit_btn" value="送信する">
+        </div>
+    </form>
+</body>
+
+</html>

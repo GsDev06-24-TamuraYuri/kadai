@@ -1,0 +1,176 @@
+body {
+    width: 650px;
+    height: 600px;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    background: #bdc3c7;
+}
+
+.yesno {
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 80px;
+}
+
+.yesno input {
+    display: none;
+}
+
+.yesno label {
+    display: block;
+    float: left;
+    cursor: pointer;
+    width: 60px;
+    margin: 0;
+    padding: 10px;
+    background: #bdc3c7;
+    color: #869198;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1;
+    transition: .2s;
+}
+
+.yesno label:first-of-type {
+    border-radius: 3px 0 0 3px;
+}
+
+.yesno label:last-of-type {
+    border-radius: 0 3px 3px 0;
+}
+
+.yesno input[type="radio"]:checked + .switch-on {
+    background-color: #a1b91d;
+    color: #fff;
+}
+
+.yesno input[type="radio"]:checked + .switch-off {
+    background-color: #e67168;
+    color: #fff;
+}
+
+.kymd {
+    margin-left: 10px;
+    height: 80px;
+}
+
+.kymd input {
+    width: 250px;
+    font-size: 14px;
+}
+
+.place {
+    margin-left: 10px;
+    height: 80px;
+}
+
+.place input {
+    width: 250px;
+    font-size: 14px;
+}
+
+.problem {
+    margin-left: 10px;
+    height: 80px;
+}
+
+.problem input {
+    display: none;
+}
+
+.problem label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    color: #3e4956;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1;
+}
+
+.problem label:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: #bdc3c7;
+    border-radius: 50%;
+}
+
+.problem input[type="radio"]:checked + label:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border-radius: 50%;
+    background: #879c18;
+}
+
+.problem {
+    height: 80px;
+}
+
+.age {
+    margin-left: 10px;
+    height: 80px;
+}
+
+.age select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 250px;
+    border: 1px solid #999;
+    background: #bdc3c7;
+    text-indent: 1em;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.job {
+    margin-left: 10px;
+    height: 80px;
+}
+
+.job select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 250px;
+    border: 1px solid #999;
+    background: #bdc3c7;
+    text-indent: 1em;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit_btn {
+    margin-top: 20px;
+    font-size: 14px;
+    width: 200px;
+    height: 40px;
+    background: #879c18;
+}
+
+.submit_btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
