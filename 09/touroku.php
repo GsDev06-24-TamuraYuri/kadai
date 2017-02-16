@@ -29,7 +29,7 @@
      属性：
      <input type="radio" name="kanri_flg" value="0">一般
 <input type="radio" name="kanri_flg" value="1">管理者<br>
-    利用状況
+    利用状況:
      <input type="radio" name="life_flg" value="0"> 利用中
 <input type="radio" name="life_flg" value="1"> 利用していない
      <br>

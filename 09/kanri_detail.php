@@ -49,7 +49,7 @@ if($status==false){
 <!-- Head[End] -->
 
 <!-- Main[Start] -->
-<form method="post" action="update.php">
+<form method="post" action="kanri_update.php">
 <div class="jumbotron">
 <fieldset>
 <legend>データ詳細</legend>
